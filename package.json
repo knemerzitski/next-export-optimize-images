@@ -33,7 +33,7 @@
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "lint": "eslint {src,__tests__} --cache",
     "lint-staged": "lint-staged",
-    "prepare": "husky install",
+    "prepare": "husky install && yarn build",
     "pretest": "yarn build && cd __tests__/e2e && rimraf {.next,out} && next build && node cli.js",
     "test": "jest",
     "test:watch": "jest --watch",
