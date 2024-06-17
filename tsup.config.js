@@ -15,7 +15,6 @@ export default defineConfig([
     ...cfg,
     entry: {
       index: 'src/index.ts',
-      imageLoader: 'src/imageLoader.ts',
       cli: 'src/cli/index.ts',
       loader: 'src/loader/index.ts',
     },
@@ -30,6 +29,7 @@ export default defineConfig([
       image: 'src/components/image.tsx',
       'legacy-image': 'src/components/legacy-image.tsx',
       picture: 'src/components/picture.tsx',
+      imageLoader: 'src/imageLoader.ts',
     },
     external: ['react', 'next', 'next-export-optimize-images'],
     outDir: 'dist/components',
