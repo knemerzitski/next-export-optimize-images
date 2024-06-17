@@ -40,7 +40,7 @@
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "lint": "eslint {src,__tests__} --cache --config .eslintrc.js",
     "lint-staged": "lint-staged",
-    "prepare": "husky",
+    "prepare": "husky && yarn build",
     "pretest": "yarn build && npm-run-all --sequential pretest:**",
     "pretest:e2e": "cd __tests__/e2e && rimraf {.next,out} && next build && node cli.js",
     "pretest:e2e-build": "cd __tests__/e2e-build && rimraf .next && next build && node cli.js",
