@@ -15,6 +15,7 @@ export default defineConfig([
     ...cfg,
     entry: {
       index: 'src/index.ts',
+      imageLoader: 'src/imageLoader.ts',
       cli: 'src/cli/index.ts',
       loader: 'src/loader/index.ts',
     },
